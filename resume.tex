@@ -1,0 +1,328 @@
+\documentclass[11pt, a4paper, DIV=12]{scrartcl}
+
+\usepackage[english]{babel}
+\usepackage{cmap}       
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{exscale}
+\usepackage[l2tabu, orthodox]{nag}
+\usepackage[symbol]{footmisc}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+
+\setlength\parindent{0in} 
+\usepackage[usenames,dvipsnames]{xcolor} 
+\definecolor{maroon}{rgb}{0.5, 0.0, 0.0}
+\definecolor{upmaroon}{RGB}{133, 75, 91}
+\definecolor{upgrey}{RGB}{99, 124, 128}
+
+\definecolor{upblack}{RGB}{64, 62, 48}
+\definecolor{upbeige}{RGB}{224, 229, 224}
+
+
+\usepackage[
+bookmarks, 
+colorlinks, 
+breaklinks, 
+pdftitle={Noman Bashir -- CV},
+pdfauthor={Noman Bashir}
+]{hyperref}
+\hypersetup{linkcolor=black,citecolor=blue,filecolor=black,urlcolor=black}
+
+\usepackage{url}
+
+\usepackage{microtype}
+\usepackage{ellipsis}
+\usepackage{xspace}
+\usepackage{hfoldsty}
+
+\usepackage{ifthen}
+\newcommand{\CC}[1][]{$\text{C\hspace{-.25ex}}^{_{_{_{++}}}}
+	\ifthenelse{\equal{#1}{}}{}{\text{\hspace{-.625ex}#1}}$}
+
+%\addtokomafont{disposition}{\rmfamily}
+%\addtokomafont{descriptionlabel}{\rmfamily}
+%\usepackage{lmodern}
+\usepackage[varqu]{zi4}
+%\usepackage[sfdefault]{classico}
+\usepackage[tt=false]{libertine}
+%\usepackage[]{classico}
+\usepackage[varqu]{zi4}
+\usepackage[libertine]{newtxmath}
+%\usepackage[]{helvet}
+
+\begin{document}
+
+\section*{\textcolor{upmaroon}{Curriculum vitæ}}
+\vspace{-20pt}
+\hrulefill
+\subsection*{Address}
+\noindent
+\begin{tabular}{l}
+Noman Bashir\\
+University of Massachusetts Amherst\\ 
+206 Knowles Engineering Building\\ 
+Amherst, MA, 01002\\
+E-mail: \texttt{nbashir@umass.edu} \\
+Homepage: \url{https://noman-bashir.github.io/}\\
+\end{tabular}
+
+\subsection*{Areas of Specialization}
+\noindent
+\begin{tabular}{p{15.0cm}}
+Designing sustainable, equitable, and explainable computing systems, e.g., edge, cloud, datacenters, and cyber-physical systems, e.g., electric grid.
+\end{tabular}
+
+\subsection*{Education}
+\noindent
+\begin{tabular}{p{3.0cm}p{11.5cm}}
+	08/2016--02/2022&PhD in Computer Engineering, University of Massachusetts Amherst\\
+	09/2013--03/2016&MS Energy Systems Engineering, National University of Science and Technology, Islamabad, Pakistan\\
+	09/2009--05/2013&BS Electrical Engineering, University of Engineering and Technology, Lahore, Pakistan\\
+\end{tabular}
+
+\subsection*{Employment}
+\begin{tabular}{p{3.0cm}p{11.5cm}}
+	09/2016--present&PhD student and graduate research assistant, Sustainable Computing Lab, University of Massachusetts Amherst, advised by David Irwin.\\
+	05/2021--08/2021& Student researcher at VMware Research Group. Hosted by Ben Pfaff and Victor Firoiu.\\
+	05/2020--11/2020& Student researcher at the SysInfra/Borg team inside Google. Hosted by Nan Deng and Krzysztof Rzadca.\\
+	05/2015--06/2016&Research associate, Advanced Communication Lab, Lahore University of Management Sciences (LUMS), advised by Naveed-ul-Hassan.\\
+	09/2013--05/2015&Research engineer, Systems and Networks (SysNet) Lab, National University of Computer and Emerging Sciences, Pakistan, advised by Affan A. Syed.\\
+\end{tabular}
+
+\renewcommand{\refname}{\large\bfseries Publications}
+
+
+
+\begin{thebibliography}{5}
+
+\subsubsection*{Conference Papers}
+
+	\bibitem{Mor+2015}
+	Noman Bashir, Tian Guo, Mohammad Hajiesmaili, David Irwin, Prashant Shenoy, Ramesh Sitaraman, Abel Souza, Adam Wierman.
+	\emph{Enabling Sustainable Clouds: The Case for Virtualizing the Energy System}, 
+	 ACM Symposium on Cloud Computing (SoCC), 2021. 
+	
+
+
+	\bibitem{Mor+2015}
+    Pradeep Ambati, Noman Bashir, David Irwin, Prashant Shenoy.
+	\emph{Good Things Come to Those Who Wait: Optimizing Job Waiting in the Cloud},
+	ACM Symposium on Cloud Computing (SoCC), 2021.	
+
+	\bibitem{Mor+2015}
+	Noman Bashir, Nan Deng, Krzysztof Rzadca, David Irwin, Sree Kodak, Rohit Jnagal.
+	\emph{Take it to the Limit: Prediction-Driven Resource Overcommitment in Datacenters},
+    European Conference on Computer Systems (EuroSys), 2021, Artifact Badges: Available, Functional, and Results Reproduced.	
+
+	\bibitem{Mor+2015}
+	Noman Bashir, David Irwin, Prashant Shenoy.
+	\emph{DeepSnow: Modeling the Impact of Snow on Solar Generation},
+	ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation (BuildSys), 2020.
+
+	\bibitem{Mor+2020}
+    Noman Bashir, David Irwin, Prashant Shenoy.
+	\emph{A Probabilistic Approach to Committing Solar Energy in Day-ahead Electricity Markets},
+	International Green and Sustainable Computing Conference (IGSC), 2020.
+
+	\bibitem{Fey+2020}
+	Pradeep Ambati, Noman Bashir, David Irwin, Prashant Shenoy.
+    \emph{Waiting Game: Optimally Provisioning Fixed Resources for Cloud-enabled Schedulers},
+	Supercomputing (SC) 2020, Best Paper Award Finalist and Best Student Paper Award Finalist.
+	
+	\bibitem{Oet+2020}
+	Santiago Correa, Noman Bashir, Andrew Tran, David Irwin, Jay Taneja.
+	\emph{Extend: A Framework for Increasing Energy Access by Interconnecting Solar Home Systems},
+	ACM SIGCAS Conference on Computing and Sustainable Societies (COMPASS), 2020.
+	
+	\bibitem{Mor+2019}
+	Menghong Feng, Noman Bashir, Prashant Shenoy, David Irwin, Dragoljub Kosanovic.
+	\newblock \emph{SunDown: Model-driven Per-Panel Solar Anomaly Detection for Residential Arrays},
+	\newblock ACM SIGCAS Conference on Computing and Sustainable Societies (COMPASS), 2020.
+	
+	\bibitem{Yin+2018}
+	Pradeep Ambati, Noman Bashir, Mohammad Hajiesmaili, David Irwin, Prashant Shenoy.
+	\emph{Hedge Your Bets: Optimizing Long-term Cloud Costs by Mixing VM Purchasing Options},
+	IEEE International Conference on Cloud Engineering (IC2E), 2020.
+	
+	\bibitem{Kri+2018}
+	Noman Bashir, Dong Chen, David Irwin, Prashant Shenoy.
+	\emph{Solar-TK: A Data-driven Toolkit for Solar PV Performance Modeling and Forecasting},
+	IEEE International Conference on Mobile Ad-Hoc and Smart Systems (MASS), 2019.
+	
+	\bibitem{Mor+2017}
+    Santiago Correa, Noman Bashir, Jesus Omana Iglesias, Candace Saffery, Jay Taneja.
+	\emph{Like a Good Neighbor, Solar is There},
+	The International Conference on Future Energy Systems (e-Energy), 2019.
+	
+	\bibitem{Mor+2017}
+	Noman Bashir, David Irwin, Prashant Shenoy.
+	\emph{Helios: A Programmable Software-defined Solar Module},
+	ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation (BuildSys), 2018.
+	
+	\bibitem{Mor+2016}
+    Noman Bashir, David Irwin, Prashant Shenoy, Jay Taneja.
+	\emph{Enforcing Fair Grid Energy Access for Controllable Distributed Solar Capacity},
+	ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation (BuildSys), 2017.
+	
+	\bibitem{Mor+2016}
+    Noman Bashir, Hira Shahzad Sardar, Mashood Nasir, Naveed Ul Hassan, Hassan A. Khan.
+	\emph{Lifetime Maximization of Lead-acid Batteries in Small Scale UPS and Distributed Generation Systems},
+	IEEE PowerTech, 2017.
+
+	\bibitem{Mor+2016}
+    Aneeq Ur Rehman, Noman Bashir, Naveed Ul Hassan, Chau Yuen.
+	\emph{Impact of Home Appliances on the Performance of Narrow-band Power Line Communications for Smart Grid Applications},
+	IEEE Region Ten International Conference (TenCon), 2016.
+	
+	\bibitem{Mor+2016}
+    Noman Bashir, Zohaib Sharani, Khushboo Qayyum, and Affan A. Syed.
+	\emph{Delivering Smart Load-shedding for Highly-stressed Grids},
+	IEEE International Conference on Communications, Control, and Computing Technologies for Smart Grids (SmartGridComm), 2015.
+
+
+\subsubsection*{Journal Articles}
+
+\bibitem{Mor+2020}
+Pradeep Ambati, Noman Bashir, David Irwin, Prashant Shenoy.
+\emph{Modeling and Analyzing Waiting Policies for Cloud-Enabled Schedulers},
+IEEE Transactions on Parallel and Distributed Systems (TPDS), 2021.
+
+\bibitem{Mor+2020}
+Menghong Feng, Noman Bashir, Prashant Shenoy, David Irwin, Dragoljub Kosanovic.
+\emph{Model-driven Per-Panel Solar Anomaly Detection for Residential Arrays},
+ACM Transactions on Cyber-Physical Systems (TCPS), 2021.
+
+\bibitem{Mor+2020}
+Noman Bashir, David Irwin, Prashant Shenoy, Jay Taneja.
+\emph{Mechanisms and Policies for Controlling Distributed Solar Capacity},
+The ACM Transactions on Sensor Networks (TOSN), 2018.
+
+\subsubsection*{Book Chapters}
+
+\bibitem{Mor+2015}
+Noman Bashir, Naveed Ul Hassan, Chau Yuen, Wayes Tushar.
+\emph{Smart-grid Communications and Standard},
+in \emph{IET Communication, Control and Security Challenges for the Smart Grid}, 2017.
+
+
+\subsubsection*{Posters/Demos (Peer-reviewed)}
+
+\bibitem{Mor+2020}
+Santiago Correa, Noman Bashir, Jesus Omana Iglesias, Candace Saffery, Jay Taneja.
+\emph{EXTEND: A Framework for Increasing Energy Access in Communities with Solar Home Systems},
+ACM SIGCAS Conference on Computing and Sustainable Societies (COMPASS), 2019.
+
+\bibitem{Mor+2020}
+Noman Bashir, Dong Chen, David Irwin, Prashant Shenoy.
+\emph{Solar-TK: Solar Performance Modeling and Forecasting Toolkit},
+ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation (BuildSys), 2019.
+
+\bibitem{Yin+2018}
+Zohaib Sharani, Noman Bashir, Khushboo Qayyum, and Affan A. Syed.
+\emph{Enabling Practical Demand Response in Highly-Stressed Grids using Aashiyana},
+The International Conference on Future Energy Systems (e-Energy), 2015.
+
+\bibitem{Yin+2018}
+Zohaib Sharani, Khushboo Qayyum, Noman Bashir, and Affan A. Syed.
+\emph{SoftUPS: Eliminating the Need and Cost of Battery Backups},
+The International Conference on Future Energy Systems (e-Energy), 2014.
+
+\subsubsection*{Thesis}
+
+\bibitem{Mor+2019}
+Noman Bashir.
+\emph{Improving the Programmability of Networked Energy Systems}, PhD thesis, University of Massachusetts Amherst, 2022.
+
+\bibitem{Mor+2015}
+Noman Bashir.
+\emph{Using Stressed Grids as a Storage Medium for Renewable Energy}, MSc thesis, National University of Science and Technology (NUST), Islamabad, 2016.
+
+
+	
+\subsubsection*{Submitted Papers}
+
+\bibitem{Mor+2015}
+Abel Souza, Noman Bashir, Jorge Murillo, Walid Hanafy, Qianlin Liang, David Irwin, Prashant Shenoy.
+\emph{Ecovisor: A Virtual Energy System for Carbon-Efficient Applications}.
+	
+\end{thebibliography}
+
+\subsection*{Academic Honors}
+\begin{tabular}{p{2.1cm}p{12.0cm}}
+	2020& Best student paper and best paper finalist at ACM/IEEE Supercomputing (SC).\\
+	2017& Best paper nomination at ACM BuildSys.\\
+\end{tabular}
+
+\subsection*{Invited Talks}
+\begin{tabular}{p{2.1cm}p{12.0cm}}
+04/2021& Information Technology University (ITU), Pakistan, (virtual), \emph{Leveraging Machine Learning to Design Energy Efficient and Sustainable Systems.}\\
+11/2020&Energy Data Analytics Symposium, Duke University, \emph{Solar-TK: A Data-driven Toolkit for Solar PV Performance Modeling and Forecasting.}\\
+\end{tabular}
+
+
+% \subsection*{Teaching}
+% \begin{tabular}{l}
+% Supervised eight bachelor and master thesis, one intern. \\[0.5em]
+% \end{tabular}
+
+% \begin{tabular}{p{2.1cm}p{12.0cm}}
+% 11/2021 & Guest lecture \emph{Introduction to Graph Neural Networks} in the \emph{Applied Machine Learning} class, McGill University\\	
+	
+% SS 2019&Proseminar \emph{Graph Algorithms} (supervised students and helped with organization)\\
+% SS 2018&Seminar \emph{Algorithm Engineering} (supervised students and helped with organization)\\
+% SS 2017&Seminar \emph{Algorithm Engineering} (supervised students and helped with organization)\\
+% WS 2016/17&Student project group \emph{Algorithm Engineering for Graph Data Mining} (co-organizer), Seminar \emph{Algorithms Unplugged} (supervised students and helped with organization)\\
+% SS 2016& Seminar \emph{Algorithm Engineering}, Seminar \emph{Graph Mining} (supervised students and helped with organization)\\
+% As a student&Programming tutorials for engineering students, teaching assistant for a course on theoretical computer science\\
+% \end{tabular}
+
+\subsection*{Service to the Profession}
+
+\begin{tabular}{p{14.5cm}}
+Shadow PC member for ACM EuroSys 2022. \\[0.5em]
+\end{tabular}
+
+\begin{tabular}{p{14.5cm}}
+Reviewer for IEEE Transactions on Parallel and Distributed Systems (TPDS) and Elsevier Sustainable
+Computing (SUSCOM) journal.\\[0.5em]
+\end{tabular}
+
+
+% \subsection*{Grants}
+% \begin{tabular}{p{14.5cm}}
+% 	DFG Emmy Noether grant (own funding 1\,500\,000\,€)\\[0.5em]
+
+% 	DAAD IFI postdoc scholarship for a 13 month stay at the Mila--Quebec AI Institute (own funding 38\,909\,€)\\[0.5em]
+		
+% 	Research associate and PhD student  within the Collaborative Research Center SFB 876, assisted in preparing the  grant proposal for project A6 \emph{Resource-efficient Graph Mining}
+% \end{tabular}
+
+
+% \subsection*{Other}
+
+% \begin{tabular}{l}
+% 	\textsf{\textbf{\em Computational Skills}} Python, C\hspace{-1pt}+\hspace{-1pt}+, \LaTeX, NumPy, Scikit-learn, PyTorch, PyTorch Geometric\\
+% 	\textsf{\textbf{\em Languages}} German (native), English (fluent)\\
+% 	\textsf{\textbf{\em Citizenship}} German and British
+% \end{tabular}
+
+
+
+
+
+\subsection*{References}
+
+Furnished upon request.
+
+
+
+
+\vfill{} 
+\begin{center}
+{\scriptsize Last updated: \today}
+\end{center}
+
+
+
+\end{document}
